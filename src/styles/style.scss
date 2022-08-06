@@ -1,0 +1,25 @@
+@import "~bootstrap/scss/bootstrap";
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: #111;
+    color: #ccc;
+}
+ul {
+    margin-bottom: 0;
+    padding-left: 0;
+    li {
+    list-style: none;
+    }
+}
+a {
+    text-decoration: none;
+    color: #ccc;
+}
+p {
+    margin-bottom: 0;
+}
+@import "./parciales/header";
