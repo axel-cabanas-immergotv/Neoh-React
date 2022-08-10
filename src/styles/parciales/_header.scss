@@ -19,8 +19,12 @@ header {
             }
         }
     }
-    
+    &.fixer {
+        background-color: #111;
+        padding: 20px 0;
+    }
 }
+
 .trigger__container {
     position: absolute;
     top: 30px;
@@ -148,7 +152,6 @@ header {
         justify-content: space-between;
         flex-direction: column;
         padding: 122px 63px 35px;
-        overflow-y: scroll;
         overflow-x: hidden;
     }
 }

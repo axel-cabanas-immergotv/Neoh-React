@@ -2,22 +2,27 @@ import React from 'react';
 
 export default function Header() {
     const [ defuse, setDefuse ] = React.useState(false);
+    const [ fixer, setFixer ] = React.useState(false);
     const handleClick = () => {
         setDefuse(!defuse);
     };
-    const setClass = (text) => {
-        return defuse ? text : '';
+    const setClass = (boolean ,text) => {
+        return boolean ? text : '';
     }
-    
+    const headerFixer = () => {
+        return window.scrollY > 150 ? setFixer(true) : setFixer(false);
+    }
+    window.addEventListener('scroll', headerFixer);
+
     return (
         <>
-        <header>
+        <header className={setClass(fixer, 'fixer')}>
             <section className='container'>
                 <div className='header__container'>
                     <div className='header__container-logo'>
                         <img src="https://firebasestorage.googleapis.com/v0/b/neoh-16431.appspot.com/o/assets%2Flogo.png?alt=media&token=58245d43-1613-4a38-a59f-4608a2af2683" alt="logo" />
                     </div>
-                    <div onClick={handleClick} className={`header__container-menu ${setClass('active')}`}>
+                    <div onClick={handleClick} className={`header__container-menu ${setClass(defuse ,'active')}`}>
                         <div className='trigger'>
                             <p>Menu</p>
                             <div className='hamb'>
@@ -31,9 +36,9 @@ export default function Header() {
             </section>
         </header>
         <div className="Navbar container">
-            <div className={`Navbar-overlay ${setClass('open')}`}></div>
-            <div className={`Navbar-content ${setClass('open')}`}>
-                <div onClick={handleClick} className={`trigger__container ${setClass('active')}`}>
+            <div className={`Navbar-overlay ${setClass(defuse ,'open')}`}></div>
+            <div className={`Navbar-content ${setClass(defuse ,'open')}`}>
+                <div onClick={handleClick} className={`trigger__container ${setClass(defuse ,'active')}`}>
                     <div className='trigger'>
                         <p>Close</p>
                         <div className='hamb'>
