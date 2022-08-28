@@ -1,6 +1,6 @@
 export default function About () {
     return (
-        <div className='container'>
+        <div className='box-container'>
             <div className='about__item'>
                 <div className='about__item-img'>
                     <img src='https://firebasestorage.googleapis.com/v0/b/neoh-16431.appspot.com/o/assets%2F1.jpg?alt=media&token=f99d9c41-1ecb-4197-a303-c1e30322354d' />

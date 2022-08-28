@@ -7,7 +7,7 @@ export default function Hero () {
             <div className="main__container-bg-img"></div>
         </div>
         <div className="hero">
-            <div className="container">
+            <div className="box-container">
                 <div className="hero__content">
                     <h2 className="hero__content-title" title="Neoh">Neoh</h2>
                     <p className="hero__content-text ready">

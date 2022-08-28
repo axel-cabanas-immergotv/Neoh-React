@@ -211,6 +211,9 @@
                     opacity: 0;
                 }
                 
+                &:last-child {
+                    margin-right: 0;
+                }
             }
         }
     }

@@ -161,17 +161,8 @@ header {
     li {
         margin-bottom: 30px;
         transition: all .5s ease;
-        display: -webkit-flex;
-        display: -moz-flex;
-        display: -ms-flex;
-        display: -o-flex;
         display: flex;
-        -webkit-flex-direction: column;
-        -moz-flex-direction: column;
-        -ms-flex-direction: column;
-        -o-flex-direction: column;
         flex-direction: column;
-        -ms-align-items: flex-start;
         align-items: flex-start;
     }
     & a {
@@ -221,19 +212,4 @@ header {
     border-radius: 100%;
     top: 50%;
     margin-top: -2px;
-}
-
-.sub-menu {
-    margin: 25px 0 4px 30px;
-    display: none;
-
-    & li {
-        margin-bottom: 27px;
-        &:last-child {
-            margin-bottom: 0;
-        }
-    }
-    & a {
-        font-size: 20px;
-    }
 }
